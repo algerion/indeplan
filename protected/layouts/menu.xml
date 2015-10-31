@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Menu ID="mnuPrincipal">
+	<MenuItem ID="smCaptura" Title="Captura" Url="index.php?page=Captura" Description="Captura" IdPag="" />
+	<MenuItem ID="smConsulta" Title="Consulta" Url="index.php?page=Consulta" Description="Consulta" IdPag="" />
+	<MenuItem ID="smCatalogos" Title="Catálogos" Description="Catálogos">
+		<MenuItem ID="smCentros" Title="Centros gestores" Url="index.php?page=Catalogos.CentrosSV" Description="Centros gestores" IdPag="" />
+		<MenuItem ID="smProgramas" Title="Programas" Url="index.php?page=Catalogos.ProgramasDG" Description="Programas" IdPag="" />
+		<MenuItem ID="smArboles" Title="Entradas de árbol" Url="index.php?page=Catalogos.ArbolesSV" Description="Arboles" IdPag="" />
+		<MenuItem ID="smNiveles" Title="Niveles" Url="index.php?page=Catalogos.NivelesSV" Description="Niveles" IdPag="" />
+		<MenuItem ID="smIndicadores" Title="Indicadores" Url="index.php?page=Catalogos.IndicadoresSV" Description="Indicadores" IdPag="" />
+		<MenuItem ID="smFrecuencias" Title="Frecuencias" Url="index.php?page=Catalogos.FrecuenciasSV" Description="Frecuencias" IdPag="" />
+		<MenuItem ID="smCGPI" Title="Asignar indicadores a centros gestores" Url="index.php?page=Catalogos.AsignaIndCG" Description="Asignar indicadores a centros gestores" IdPag="" />
+		<MenuItem ID="smPCGI" Title="Asignar indicadores a programas" Url="index.php?page=Catalogos.AsignaIndP" Description="Asignar indicadores a programas" IdPag="" />
+		<MenuItem ID="smPM" Title="Asignar entradas de árbol a programas" Url="index.php?page=Catalogos.AsignaMP" Description="Asignar entradas de árbol a programas" IdPag="" />
+	</MenuItem>
+</Menu>

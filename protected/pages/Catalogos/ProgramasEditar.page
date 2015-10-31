@@ -1,0 +1,38 @@
+<%@ MasterClass="Application.layouts.MainLayout" Title="Programa" %>
+<com:TContent ID="Main">
+	<div align="center">
+		<table border="0">
+			<tr>
+				<td colspan="1">Problema:</td>
+				<td colspan="1"><com:TTextBox ID="txtProblema" MaxLength="500" Width="400px" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Efectos:</td>
+				<td colspan="1"><com:TTextBox ID="txtEfectos" MaxLength="500" Width="400px" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Deseado:</td>
+				<td colspan="1"><com:TTextBox ID="txtDeseado" MaxLength="500" Width="400px" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Fines:</td>
+				<td colspan="1"><com:TTextBox ID="txtFines" MaxLength="500" Width="400px" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Programa:</td>
+				<td colspan="1"><com:TTextBox ID="txtPrograma" MaxLength="500" Width="400px" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Nivel:</td>
+				<td colspan="1"><com:TDropDownList ID="ddlNivel" DataTextField="nivel" DataValueField="id_nivel" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Objetivo:</td>
+				<td colspan="1"><com:TTextBox ID="txtObjetivo" MaxLength="500" Width="400px" /></td>
+			</tr>
+			<tr>
+				<td colspan="2"><com:TButton ID="btnGuardar" Text="Guardar" OnClick="btnGuardar_Click" /></td>
+			</tr>
+		</table>
+	</div>
+</com:TContent>

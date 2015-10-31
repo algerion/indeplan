@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <authorization>
+    <allow pages="captura, consulta, home" users="*" />
+    <allow pages="Home" users="@" />
+	<allow pages="Config" roles="admin" />
+    <!--deny users="*" /-->
+  </authorization>
+</configuration>

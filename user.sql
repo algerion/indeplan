@@ -1,0 +1,3 @@
+CREATE USER 'ticket'@'%' IDENTIFIED BY 'ticket';
+GRANT ALL PRIVILEGES ON ticket.* TO 'ticket'@'%';
+FLUSH PRIVILEGES;

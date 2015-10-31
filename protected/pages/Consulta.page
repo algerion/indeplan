@@ -1,0 +1,27 @@
+<%@ MasterClass="Application.layouts.MainLayout" Title="Programas" %>
+<com:TContent ID="Main">
+	<com:TStyleSheet ID="stylshtgrid" StyleSheetUrl="../compartidos/css/gridsuave.css" />
+	<div align="center">
+		<com:TDataGrid ID="dgProgramas" GridLines="Both" AutoGenerateColumns="False" 
+				HeaderStyle.CssClass="encab" ItemStyle.CssClass="filapar" AlternatingItemStyle.CssClass="filaimpar" >
+			<com:TBoundColumn ID="bcClave"			DataField="clave" 			HeaderText="Clave" 			EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcDenominacion"	DataField="denominacion" 	HeaderText="Denominación"	EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcProblema"		DataField="problema" 		HeaderText="Problema"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcCausas"			DataField="causas" 			HeaderText="Causas"			EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcEfectos"		DataField="efectos" 		HeaderText="Efectos"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcDeseado"		DataField="deseado" 		HeaderText="Deseado"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcMedios"			DataField="medios" 			HeaderText="Medios"			EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcFines"			DataField="fines" 			HeaderText="Fines"			EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcPrograma"		DataField="programa" 		HeaderText="Programa"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcNivel"			DataField="nivel" 			HeaderText="Nivel" />
+			<com:TBoundColumn ID="bcObjetivo"		DataField="objetivo" 		HeaderText="Objetivo"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcMeta"			DataField="meta" 			HeaderText="Meta"			EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcUnidad"			DataField="unidad" 			HeaderText="Unidad"			EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcIndicador"		DataField="indicador" 		HeaderText="Indicador"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcFormula"		DataField="formula" 		HeaderText="Fórmula"		EnableCellGrouping="True" />
+			<com:TBoundColumn ID="bcAvance"			DataField="avance"	 		HeaderText="Avance" />
+			<com:TBoundColumn ID="bcPorcentaje"		DataField="porcentaje" 		HeaderText="Porcentaje" />
+			<com:TBoundColumn ID="bcFrecuencia"		DataField="frecuencia" 		HeaderText="Frecuencia" />
+		</com:TDataGrid>
+	</div>
+</com:TContent>

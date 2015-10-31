@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<application id="indeplan" mode="Debug">
+	<!-- modulos configurados y cargados para todos los servicios -->
+	<modules>
+		<!--module class="System.Util.TParameterModule" ParameterFile="Application.Settings.Parametros" /-->
+		<module class="System.Data.TDataSourceConfig" id="db">
+			<database ConnectionString="mysql:host=localhost;dbname=indicadores_planeacion" username="indicadores" password="planeacion" charset="UTF8" />
+		</module>
+		<module class="System.I18N.TGlobalization" DefaultCharset="utf-8" />
+		<!-- module id="session" class="THttpSession" SessionName="SSID"
+			CookieMode="Allow" UseCustomStorage="false" AutoStart="true" GCProbability="1"
+			UseTransparentSessionID="true" TimeOut="3600" / --> <!-- SavePath="temp" -->
+		<module id="auth"
+			class="System.Security.TAuthManager"
+			UserManager="users"
+			AllowAutoLogin="true"
+			LoginPage="Usuarios.Login" />
+ 		<module id="users"
+			class="System.Security.TDbUserManager"
+			UserClass="Application.Pages.Usuarios.Usuario" ConnectionID="db" />
+		<module class="System.Data.ActiveRecord.TActiveRecordConfig" EnableCache="true" ConnectionID="db" />
+	</modules>
+	<parameters>
+		<parameter id="mailserver" value="192.168.1.9" />
+	</parameters>
+</application>

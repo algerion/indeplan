@@ -1,0 +1,35 @@
+<%@ MasterClass="Application.layouts.MainLayout" Title="Capturar indicadores de planeación" %>
+<com:TContent ID="Main">
+	<div align="center">
+		<table width="50%" border="0">
+			<tr><td width="30%"></td><td width="70%"></td></tr>
+			<tr>
+				<td colspan="2" align="center">Capturar indicadores de planeación<br /><br /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Centro gestor:</td>
+				<td colspan="1"><com:TDropDownList ID="ddlCG" DataTextField="cg" DataValueField="id_cg" AutoPostBack="True" OnSelectedIndexChanged="enlazaProgramas" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Programa:</td>
+				<td colspan="1"><com:TDropDownList ID="ddlPrograma" DataTextField="programa" DataValueField="id_programa" AutoPostBack="True" OnSelectedIndexChanged="enlazaddlUnidades" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Indicador:</td>
+				<td colspan="1"><com:TDropDownList ID="ddlIndicador" DataTextField="indicador" DataValueField="id_indicador" AutoPostBack="True" OnSelectedIndexChanged="escribeUnidad" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Avance:</td>
+				<td colspan="1"><com:TTextBox ID="txtAvance" /><com:TLabel ID="lblUnidad" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Meta:</td>
+				<td colspan="1"><com:TTextBox ID="txtMeta" Width="400px" ReadOnly="True" TextMode="MultiLine"/></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><com:TButton ID="btnGuardar" Text="Guardar" OnClick="btnGuardar_Click" /></td>
+			</tr>
+		</table>
+		
+	</div>
+</com:TContent>

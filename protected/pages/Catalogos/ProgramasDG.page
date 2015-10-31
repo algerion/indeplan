@@ -1,0 +1,11 @@
+<%@ MasterClass="Application.layouts.MainLayout" Title="Programas" %>
+<com:TContent ID="Main">
+	<div align="center">
+		<com:TDataGrid ID="dgProgramas" GridLines="Both" DataKeyField="id_programa">
+			<com:THyperLinkColumn Text="Editar..." HeaderText="Editar" 
+					DataNavigateUrlField="id_programa"
+					DataNavigateUrlFormatString="index.php?page=Catalogos.ProgramasEditar&id=%s" />
+		</com:TDataGrid>
+		<com:TButton ID="btnNuevo" Text="Nuevo" OnClick="btnNuevo_Click" />
+	</div>
+</com:TContent>
