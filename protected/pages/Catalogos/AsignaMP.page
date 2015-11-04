@@ -1,0 +1,42 @@
+<%@ MasterClass="Application.layouts.MainLayout" Title="Entradas de árbol" %>
+<com:TContent ID="Main">
+	<div align="center">
+		<table border="0">
+			<tr>
+				<td colspan="1">Programa:</td>
+				<td colspan="1">
+					<com:TDropDownList ID="ddlPrograma" DataTextField="programa" DataValueField="id_programa" 
+							AutoPostBack="True" OnSelectedIndexChanged="ddlPrograma_Changed" />
+				</td>
+			</tr>
+			<tr><td><br /></td></tr>
+			<tr>
+				<td colspan="2" align="center">Causas de problema y medios de solución asociados al programa:</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<com:TDataGrid ID="dgMediosAsoc" DataKeyField="id_medio" GridLines="Both" 
+							AutoGenerateColumns="False" OnDeleteCommand="dgMediosAsoc_Delete">
+						<com:TBoundColumn DataField="causa" HeaderText="Causas" />
+						<com:TBoundColumn DataField="medio" HeaderText="Medios" />
+						<com:TButtonColumn Text="Quitar" CommandName="delete" />
+					</com:TDataGrid>
+				</td>
+			</tr>
+			<tr><td><br /><br /></td></tr>
+			<tr>
+				<td colspan="2" align="center">Causas de problema y medios de solución no asociados al programa:</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<com:TDataGrid ID="dgMediosLibres" DataKeyField="id_medio" GridLines="Both" 
+							AutoGenerateColumns="False" OnUpdateCommand="dgMediosLibres_Update">
+						<com:TBoundColumn DataField="causa" HeaderText="Causas" />
+						<com:TBoundColumn DataField="medio" HeaderText="Medios" />
+						<com:TButtonColumn Text="Agregar" CommandName="update" />
+					</com:TDataGrid>
+				</td>
+			</tr>
+		</table>
+	</div>
+</com:TContent>

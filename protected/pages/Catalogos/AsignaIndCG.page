@@ -1,0 +1,51 @@
+<%@ MasterClass="Application.layouts.MainLayout" Title="Indicadores por CG" %>
+<com:TContent ID="Main">
+	<div align="center">
+		<table border="0">
+			<tr>
+				<td colspan="1">Centro gestor:</td>
+				<td colspan="1">
+					<com:TDropDownList ID="ddlCG" DataTextField="cg" DataValueField="id_cg" 
+							AutoPostBack="True" OnSelectedIndexChanged="ddlCG_Changed" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1">Programa:</td>
+				<td colspan="1">
+					<com:TDropDownList ID="ddlPrograma" DataTextField="programa" DataValueField="id_programa" 
+							AutoPostBack="True" OnSelectedIndexChanged="ddlPrograma_Changed" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="1">Frecuencia:</td>
+				<td colspan="1"><com:TDropDownList ID="ddlFrecuencia" DataTextField="frecuencia" DataValueField="id_frecuencia" /></td>
+			</tr>
+			<tr>
+				<td colspan="1">Meta:</td>
+				<td colspan="1"><com:TTextBox ID="txtMetaNum" Text="0" /></td>
+			</tr>
+		</table>
+		<table border="0">
+			<tr>
+				<td colspan="1">Indicadores no agregados:</td>
+				<td></td>
+				<td colspan="1">Indicadores agregados:</td>
+			</tr>
+			<tr>
+				<td colspan="1">
+					<com:TListBox ID="lstIndicLibres" DataTextField="indicador" DataValueField="id_indicador" Rows="10" 
+							AutoPostBack="True" OnSelectedIndexChanged="lstIndicLibres_Changed" />
+				</td>
+				<td>
+					<com:TButton ID="btnAgregar" Text="->" OnClick="btnAgregar_Click" />
+					<br />
+					<com:TButton ID="btnEliminar" Text="<-" OnClick="btnEliminar_Click" />
+				</td>
+				<td colspan="1">
+					<com:TListBox ID="lstIndicAsoc" DataTextField="indicador" DataValueField="id_indicador" Rows="10" 
+							AutoPostBack="True" OnSelectedIndexChanged="lstIndicAsoc_Changed" />
+				</td>
+			</tr>
+		</table>
+	</div>
+</com:TContent>
